@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Rock-Paper-Scizors</Rock-Paper-Scizors></title>
+    <link rel="stylesheet" href="./svg/rock-scissors-paper1.svg">
     <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header>Header</header>
-<main>Game</main>
 
-<footer>Footer</footer>
+</head>
+
+<body>
+    <header>
+        <h1>Rock-Paper-Scissors</h1>
+    </header>
+
+    <div class="game">
+
+        <h1>Let start the game</h1>
+        <div class="counter">
+            <div class="count payer">0</div>
+            <span>:</span>
+            <div class="count computer">0</div>
+        </div>
+        <div class="game-box">
+            <div class="user">
+                <button class="field rock" data-field="r">
+                    <img src="./img/rock.png" alt="">
+                </button>
+                <button class="field scissors" data-field="s">
+                    <img src="./img/scizzors.png" alt="">
+                </button>
+                <button class="field paper" data-field="p">
+                    <img src="./img/paper.png" alt="">
+
+                </button>
+            </div>
+            <div class="computer">
+                <button class="field rock" data-field="r">
+                    <img src="./img/rock.png" alt="">
+                </button>
+                <button class="field scissors" data-field="s">
+                    <img src="./img/scizzors.png" alt="">
+                </button>
+                <button class="field paper" data-field="p">
+                    <img src="./img/paper.png" alt="">
+                </button>
+            </div>
+        </div>
+        <h3 class="result">Play the game!</h3>
+    </div>
+    <div class="buttons">
+        <button class="play">New Game</button>
+    </div>
+
+    <audio src="#" class="sound"></audio>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
