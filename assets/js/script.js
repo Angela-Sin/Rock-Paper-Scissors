@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const countUser = document.querySelector(".player"),
-    countComp = document.querySelector(".counter"),
-    userField = document.querySelector(".user"),
-    compField = document.querySelector(".computer"),
+  const countUser = document.querySelector(".count-user"),
+    countComp = document.querySelector(".count-comp"),
+    userField = document.querySelector(".user-field"),
+    compField = document.querySelector(".comp-field"),
     sound = document.querySelector(".sound"),
     play = document.querySelector(".play"),
     out = document.querySelector(".out");

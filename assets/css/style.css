@@ -43,7 +43,7 @@ header {
 	font-size: 40px;
 	text-align: center;
 }
-.counter {
+.counter-block {
 	width: 200px;
 	background: #000;
 	border:5px solid #747171;
@@ -54,7 +54,7 @@ header {
 	justify-content: space-around;
 	font-size: 44px;
 }
-.counter span {
+.counter-block span {
 	margin:0 25px;
 }
 .count {
@@ -63,17 +63,17 @@ header {
 	text-align: center;
 }
 
-.game-box {
+.game-field {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding:30px 20px;
 }
-.user{
+.user-field{
 	width: 50%;
 	display: flex;
 }
-.computer {
+.comp-field {
 	width: 50%;
 	display: flex;
 }
@@ -98,7 +98,7 @@ header {
 .field.error {
 	background-color: rgba(255, 0, 0, 0.657);
 }
-.computer {
+.comp-field {
 	justify-content: flex-end;
 }
 .rock {
@@ -110,16 +110,16 @@ header {
 .paper {
 	background: #000;
 }
-.computer.blink .rock {
+.comp-field.blink .rock {
 	animation: blink 0.3s linear infinite;
 }
-.computer.blink .scissors {
+.comp-field.blink .scissors {
 	animation: blink 0.3s 0.1s linear infinite;
 }
-.computer.blink .paper {
+.comp-field.blink .paper {
 	animation: blink 0.3s 0.2s linear infinite;
 }
-.computer.blink {
+.comp-field.blink {
 	animation-play-state: paused;
 }
 @keyframes blink {
@@ -129,7 +129,7 @@ header {
 	padding:20px 15px;
 	text-align: center;
 }
-button .buttons  {
+.buttons button {
 	margin:0 8px;
 	cursor:pointer;
 	border:none;
@@ -149,7 +149,7 @@ button .buttons  {
 	box-shadow: 1px 1px 0 #0c4e00;
 }
 .play {
-	background: linear-gradient(180deg, #2d8bd7, #2d0b92);
+	background: linear-gradient(180deg, #00cb48, #126e01);
 }
 
 
@@ -164,23 +164,25 @@ button .buttons  {
 	.figure-container {
 		flex-direction: column;
 	}
-	.user,
+	.user-field,
 	.comp-field {
 		width: 100%;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 	}
-	.user {
+	.user-field {
 		margin-bottom: 20px;
 	}
-	.user{
+	.user-field{
+		content:"Player:";
 		display: block;
 		width: 100%;
 		font-size: 20px;
 		text-align: center;
 	}
-	.computer{
+	.comp-field{
+		content:"Computer:";
 		display: block;
 		width: 100%;
 		font-size: 20px;
