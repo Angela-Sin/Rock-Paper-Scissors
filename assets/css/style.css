@@ -1,3 +1,19 @@
-body {
-    background-color: blueviolet;
+/* override default settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: olive;
+}
+
+.main {
+    background: purple;
+}
+
+footer {
+    background: blue;
 }
